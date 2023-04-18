@@ -1,0 +1,82 @@
+body{
+    background-image: url(https://bomdia.eu/suica/wp-content/uploads/sites/3/2021/01/carro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.dark-mode header{
+    
+    background: black;
+   color: white;
+   }
+   
+   
+   header{
+       display: flex;
+       justify-content: space-around;
+       background: rgba(147, 144, 144, 0.744);
+       color: white;
+       padding: 20px;
+       
+   }
+   
+   .dark-mode{
+    background-image: url(https://s1.1zoom.me/big0/183/Ferrari_Italy_458Luxury_435149.jpg);
+     background-size: cover; 
+    background-repeat: no-repeat;
+       
+       color: white;
+   }
+   
+   h1{
+    color: white;
+    font-family: cursive;
+       padding: 20px;
+   }
+   
+   
+   input{
+       background: black;
+       color: aliceblue;
+   align-items: center;
+  height: 23px;
+   width: 280px;
+   display: block;
+   
+   }
+   
+   p{
+    color: aliceblue;
+       font-family: cursive;
+       font-size: 20px;
+       margin-top: 80px;
+   }
+
+
+   button{
+    background: gold;
+    color: aliceblue;
+    height: 30px;
+   }
+
+
+   button:hover{
+    background: green;
+    cursor:context-menu ;
+   }
+
+   .container{
+    background: rgba(147, 144, 144, 0.744);
+  margin-left: 74vh;
+width: 30%;
+   }
+
+
+   footer{
+ font-size: 20px;
+ font-family: cursive;
+    margin-top: 325px;
+    background:rgba(147, 144, 144, 0.744) ;
+   }

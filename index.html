@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" href="calcular.css">
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tabuada</title>
+    
+    
+
+<script>
+    function gerarTabuada(){
+        var numero = parseInt(document.getElementById("numero").value)
+        var tabela = document.getElementById('tabela-tabuada');
+
+        tabela.innerHTML = "" //limpar a tabela antes de gerar a outra.
+
+        //Gerar tabuada
+
+        for(var i = 1; i <= 10; i++){
+            var resultado = numero * i;
+            var linha = "<tr><td>" + numero + "X" + i + "</td><td>" + resultado + "</td></tr>";
+
+            tabela.innerHTML += linha 
+        }
+    }
+
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+    
+   
+<header>
+    <h1>Tabuada Dinâmica</h1>
+    <button id="toggle-mode">Alternar Modo</button>
+</header>
+
+<div class="container">
+    <center>
+        <p><strong>Digite um valor para gerar a tabuada</strong></p>
+    
+        <input type="text" name="" id="numero">
+        <button onclick="gerarTabuada()">Gerar Tabuada</button>
+        <table id="tabela-tabuada"></table>
+    </center>
+    
+
+
+
+
+
+
+
+
+
+
+<script>
+
+const toggleBtn = document.getElementById('toggle-mode')
+const body = document.body
+
+
+toggleBtn.addEventListener('click', function(){
+    body.classList.toggle('dark-mode')
+})
+</script>
+
+
+</div>
+
+<center>
+    <footer>Desenvolvido por Vinicius Braida / Todos os direitos reservados.</footer>
+</center>
+
+
+</body>
+</html>
